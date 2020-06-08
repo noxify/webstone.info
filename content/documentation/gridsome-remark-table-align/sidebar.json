@@ -1,19 +1,28 @@
 {
-  "gridsome-remark-table-align": [
-    {
-      "name": "Getting started",
-      "children" : [
-        {
-          "name" : "Introduction",
-          "link" : "/"
+
+  "name": "gridsome-remark-table-align",
+  "links": [{
+      "link": {
+        "title": "Getting started",
+        "url": "#"
+      },
+      "children": [{
+          "link": {
+            "title": "Introduction",
+            "url": "/"
+          }
         },
         {
-          "name": "Installation",
-          "link": "/installation"
+          "link": {
+            "title": "Installation",
+            "url": "/installation"
+          }
         },
         {
-          "name": "Configuration",
-          "link": "/configuration"
+          "link": {
+            "title": "Configuration",
+            "url": "/configuration"
+          }
         }
       ]
     }

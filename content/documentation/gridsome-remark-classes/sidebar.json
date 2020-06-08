@@ -1,21 +1,29 @@
 {
-  "gridsome-remark-classes": [
-    {
-      "name": "Getting started",
-      "children" : [
-        {
-          "name" : "Introduction",
-          "link" : "/"
-        },
-        {
-          "name": "Installation",
-          "link": "/installation"
-        },
-        {
-          "name": "Configuration",
-          "link": "/configuration"
+
+  "name": "gridsome-remark-classes",
+  "links": [{
+    "link": {
+      "title": "Getting started",
+      "url": "#"
+    },
+    "children": [{
+        "link": {
+          "title": "Introduction",
+          "url": "/"
         }
-      ]
-    }
-  ]
+      },
+      {
+        "link": {
+          "title": "Installation",
+          "url": "/installation"
+        }
+      },
+      {
+        "link": {
+          "title": "Configuration",
+          "url": "/configuration"
+        }
+      }
+    ]
+  }]
 }

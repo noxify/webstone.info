@@ -30,9 +30,9 @@ module.exports = {
       }
     },
     {
-      use: 'gridsome-source-static-meta',
+      use: 'gridsome-source-menu',
       options: {
-        path: 'content/documentation/**/*.json'
+        path: './content/documentation/**/sidebar.json'
       }
     },
     {

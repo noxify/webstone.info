@@ -1,7 +1,17 @@
 const _ = require('lodash');
+const path = require('path')
+const fs = require('fs-extra')
+const parseJson = require('json-parse-better-errors')
+const jsYaml = require('js-yaml')
+const glob = require('globby')
+
+const mimeToParseFunc = {
+  'application/json': parseJson,
+  'text/yaml': jsYaml.load
+}
 
 module.exports = function (api) {
-  
+
   api.onCreateNode(options => {
     if (options.internal.typeName === 'Blog') {
       options.featured = (options.featured) ? options.featured : false;
@@ -11,7 +21,7 @@ module.exports = function (api) {
         ...options
       };
     }
-    if( options.internal.typeName === 'CustomPage') {
+    if (options.internal.typeName === 'CustomPage') {
       options.subtitle = options.subtitle || ''
     }
   })
@@ -83,27 +93,16 @@ module.exports = function (api) {
     }) => {
 
       var pathArray = node.path.split('/')
-      pathArray.splice(1,1)
+      pathArray.splice(1, 1)
 
       const pluginName = pathArray[2];
-      const query = `{
-        metadata {
-          ${pluginName} { name }
-        }
-      }
-      `
 
-      console.log(query);
-      const  sidebarData  = await graphql(query);
-
-      console.log(sidebarData)
       createPage({
         path: pathArray.join('/'),
         component: './src/templates/DocumentationPage.vue',
         context: {
           id: node.id,
-          plugin: pathArray[2],
-          sidebar: sidebarData.metadata
+          plugin: pluginName
         }
       });
 
