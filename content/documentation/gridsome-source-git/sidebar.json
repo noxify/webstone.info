@@ -1,0 +1,34 @@
+{
+  "gridsome-source-git": [
+    {
+      "name": "Getting started",
+      "children" : [
+        {
+          "name" : "Introduction",
+          "link" : "/"
+        },
+        {
+          "name": "Installation",
+          "link": "/installation"
+        },
+        {
+          "name": "Configuration",
+          "link": "/configuration"
+        }
+      ]
+    },
+    {
+      "name": "Examples",
+      "children": [
+        {
+          "name": "Public Repository",
+          "link": "/example-public-repo"
+        },
+        {
+          "name": "Private Repository",
+          "link": "/example-private-repo"
+        }
+      ]
+    }
+  ]
+}

@@ -30,6 +30,19 @@ module.exports = {
       }
     },
     {
+      use: 'gridsome-source-static-meta',
+      options: {
+        path: 'content/documentation/**/*.json'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Documentation',
+        path: './content/documentation/**/*.md'
+      }
+    },
+    {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Author',

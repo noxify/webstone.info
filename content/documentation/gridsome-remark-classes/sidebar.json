@@ -1,0 +1,21 @@
+{
+  "gridsome-remark-classes": [
+    {
+      "name": "Getting started",
+      "children" : [
+        {
+          "name" : "Introduction",
+          "link" : "/"
+        },
+        {
+          "name": "Installation",
+          "link": "/installation"
+        },
+        {
+          "name": "Configuration",
+          "link": "/configuration"
+        }
+      ]
+    }
+  ]
+}

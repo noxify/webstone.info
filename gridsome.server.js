@@ -1,18 +1,7 @@
 const _ = require('lodash');
 
 module.exports = function (api) {
-  api.loadSource(({
-    addCollection
-  }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-  })
-
-  api.createPages(({
-    createPage
-  }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api/
-  })
-
+  
   api.onCreateNode(options => {
     if (options.internal.typeName === 'Blog') {
       options.featured = (options.featured) ? options.featured : false;
@@ -65,6 +54,56 @@ module.exports = function (api) {
         context: {
           recordId: node.id,
           tags: tags,
+        }
+      });
+
+    });
+  });
+
+  api.createPages(async ({
+    graphql,
+    createPage
+  }) => {
+    // Use the Pages API here: https://gridsome.org/docs/pages-api
+    const {
+      data
+    } = await graphql(`{
+      allDocumentation {
+        edges {
+          node {
+            id
+            path
+          }
+        }
+      }
+    }`);
+
+    data.allDocumentation.edges.forEach(async ({
+      node
+    }) => {
+
+      var pathArray = node.path.split('/')
+      pathArray.splice(1,1)
+
+      const pluginName = pathArray[2];
+      const query = `{
+        metadata {
+          ${pluginName} { name }
+        }
+      }
+      `
+
+      console.log(query);
+      const  sidebarData  = await graphql(query);
+
+      console.log(sidebarData)
+      createPage({
+        path: pathArray.join('/'),
+        component: './src/templates/DocumentationPage.vue',
+        context: {
+          id: node.id,
+          plugin: pathArray[2],
+          sidebar: sidebarData.metadata
         }
       });
 
