@@ -1,0 +1,46 @@
+{
+  "headerNavigation": [
+    {
+      "name": "Home",
+      "link": "/",
+      "external": false
+    },
+    {
+      "name": "Blog",
+      "link": "/blog",
+      "external": false
+    },
+    {
+      "name": "Repositories",
+      "link": "/repositories",
+      "external": false
+    },
+    {
+      "name": "Documentation",
+      "link": "/documentation",
+      "external": false
+    }
+  ],
+  "footerNavigation": [
+    {
+      "name": "Home",
+      "link": "/",
+      "external" : false
+    },
+    {
+      "name": "Disclaimer",
+      "link": "/disclaimer",
+      "external": false
+    },
+    {
+      "name": "Imprint",
+      "link": "/imprint",
+      "external": false
+    },
+    {
+      "name": "Credits",
+      "link": "/credits",
+      "external": false
+    }
+  ]
+}

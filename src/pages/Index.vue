@@ -1,0 +1,73 @@
+<template>
+  <Layout>
+    <content-header :title="$static.metadata.siteName" :sub="$static.metadata.siteDescription"></content-header>
+
+    <div class="container mx-auto py-16">
+      <div class="mx-4">
+        <div class="lg:w-1/2 w-full mb-0">
+          <h3 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-gray-200">Latest Posts</h3>
+          <div class="h-1 w-20 bg-blue-500 rounded"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap mb-4">
+        <CardItem v-for="edge in $page.entries.edges" :key="edge.node.id" :record="edge.node" />
+      </div>
+    </div>
+  </Layout>
+</template>
+
+<page-query>
+  query {
+    
+    entries: allBlog(limit:3, sortBy:"created")  {
+      
+      edges {
+        node {
+          id
+          title
+          image(width: 800)
+          path
+          timeToRead
+          featured
+          humanTime: created(format: "DD MMM YYYY")
+          datetime: created
+          category {
+            id
+            title
+            path
+          }
+          author {
+            id
+            name
+            image(width: 64, height: 64, fit: inside)
+            path
+          }
+        }
+      }
+    }
+  }
+</page-query>
+
+<static-query>
+query {
+  metadata {
+    siteName
+    siteDescription
+  }
+}
+</static-query>
+
+<script>
+import CardItem from "~/components/Content/CardItem.vue";
+import ContentHeader from "~/components/Partials/ContentHeader.vue";
+
+export default {
+  metaInfo: {
+    title: "Home"
+  },
+  components: {
+    CardItem,
+    ContentHeader
+  }
+};
+</script>
