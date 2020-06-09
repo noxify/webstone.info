@@ -4,10 +4,10 @@
 
     <div class="container mx-auto py-16">
       <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center mt-16">
-        <h2 class="sm:text-4xl md:text-6xl font-medium title-font text-gray-900">
+        <h2 class="sm:text-4xl md:text-6xl font-medium title-font text-gray-900 dark:text-white">
           I <font-awesome :icon="['fas', 'heart']" class="text-red-500"></font-awesome> Open Source
         </h2>
-        <p class="lg:w-1/2 w-full leading-relaxed text-base">
+        <p class="lg:w-1/2 w-full leading-relaxed text-base dark:text-gray-200">
           All my packages/starters were built with open source resources and are licensed under MIT license.
         </p>
       </div>

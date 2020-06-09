@@ -1,9 +1,9 @@
 <template>
   <div class="bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-400 text-center text-sm">
-    <div class="container mx-auto py-16">
+    <div class="container mx-auto py-8">
       <div class="mb-4">
         <p>
-          Copyright {{ new Date().getFullYear() }} by {{ $static.metadata.siteName}} &middot; Powered by
+          Copyright {{ new Date().getFullYear() }} by {{ $static.metadata.siteName}} &middot; Built with
           <a
             href="https://www.gridsome.org"
             target="_blank"
@@ -11,7 +11,7 @@
           >Gridsome</a>
         </p>
       </div>
-      <div class="mb-4">
+      <div class="">
         <ul class="list-reset flex justify-center">
           <li v-for="navItem in $static.metadata.footerNavigation" :key="navItem.name" class="px-4">
             <g-link
