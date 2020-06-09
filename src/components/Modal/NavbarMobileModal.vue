@@ -58,7 +58,7 @@ export default {
   props: {
     sidebar: {
       type: Array,
-      default: []
+      default: () => []
     }
   },
   methods: {

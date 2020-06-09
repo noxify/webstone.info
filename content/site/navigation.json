@@ -41,6 +41,11 @@
       "name": "Credits",
       "link": "/credits",
       "external": false
+    },
+    {
+      "name" : "Website Repository",
+      "link": "https://github.com/noxify/webstone.info",
+      "external":true
     }
   ]
 }

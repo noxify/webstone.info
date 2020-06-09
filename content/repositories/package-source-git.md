@@ -1,5 +1,6 @@
 ---
-title: Gridsome GIT Source
+id: gridsome-source-git
+title: GIT Source
 description: Gridsome source to fetch data from a remote git repository
 repository: noxify/gridsome-source-git
 type: package

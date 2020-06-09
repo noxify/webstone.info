@@ -393,13 +393,19 @@ h6, .h6 {
   ol {
     @apply list-decimal;
     @apply ml-5;
-    @apply mt-5;
+    @apply my-5;
+  }
+
+  a {
+    &:hover {
+      @apply text-blue-500;
+    }
   }
 
   ul {
     @apply list-disc;
     @apply ml-5;
-    @apply mt-5;
+    @apply my-5;
   }
 
   li > ul {

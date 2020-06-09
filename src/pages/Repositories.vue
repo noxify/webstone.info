@@ -3,7 +3,7 @@
     <content-header title="Repositories" sub="A list of all my packages and themes for Gridsome"></content-header>
 
     <div class="container mx-auto py-16">
-      <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center mt-16">
+      <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center mt-4">
         <h2 class="sm:text-4xl md:text-6xl font-medium title-font text-gray-900 dark:text-white">
           I <font-awesome :icon="['fas', 'heart']" class="text-red-500"></font-awesome> Open Source
         </h2>

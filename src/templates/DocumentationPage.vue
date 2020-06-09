@@ -2,14 +2,15 @@
   <Layout :fixedHeader="true" :hideFooter="false" class="dark:bg-gray-900" :sidebar="sidebar">
     <div class="container mx-auto dark:bg-gray-900">
       <div class="w-full flex flex-row flex-wrap">
-        <div class="w-full h-full flex flex-row flex-wrap">
+        <div class="w-full h-full flex flex-row flex-wrap post-content">
           <!-- Begin Navbar -->
 
           <div
-            class="fixed dark:text-gray-200 hidden md:block w-full md:w-1/4 lg:w-1/5 bg-white overflow-y-visible dark:bg-gray-900 border-r dark:border-gray-800 sticky"
+            class=" dark:text-gray-200 hidden md:block w-full md:w-1/4 lg:w-1/5 bg-white dark:bg-gray-900 border-r dark:border-gray-800"
           >
-            <div class="fixed overflow-y">
-              <div
+
+            <div class="w-full sticky pin h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden mt-0 border border-grey-light lg:border-transparent bg-white shadow lg:shadow-none lg:bg-transparent z-20" style="top:5em;" id="menu-content">
+               <div
                 class="sidebar-section block ml-4"
                 v-for="category in sidebar"
                 :key="category.id"
@@ -20,7 +21,7 @@
                     :to="urlLink(link.url)"
                     v-for="link in category.links"
                     :key="link.id"
-                    class="block"
+                    class="block py-1 text-lg hover:text-blue-500"
                     v-bind:class="{
                     'text-blue-500' : isActive(link.url)
                   }"
@@ -28,14 +29,18 @@
                 </div>
               </div>
             </div>
+
+          
+
+            
           </div>
 
           <!-- End Navbar -->
 
-          <div
-            class="w-full md:w-3/4 lg:w-4/5 p-4 md:px-12 dark:text-gray-200"
-            v-html="$page.page.content"
-          ></div>
+          <div class="w-full min-h-screen md:w-3/4 lg:w-4/5 px-4 mt-1 mb-12 md:px-12 dark:text-gray-200">
+            <div v-html="$page.page.content"></div>
+            
+          </div>
         </div>
       </div>
     </div>
@@ -43,10 +48,14 @@
 </template>
 
 <page-query>
-  query($id: ID!, $plugin: String ) {
+  query($id: ID!, $plugin: String, $pluginId: ID ) {
     page: documentation(id: $id) {
       title
       content
+    }
+
+    repo: repository(id:$pluginId) {
+      title
     }
 
     sidebar : allMenu(filter:{name:{eq:$plugin}}) {
@@ -68,6 +77,20 @@
   }
 </page-query>
 
+<static-query>
+query {
+  metadata {
+    siteName
+  
+    footerNavigation {
+        name
+        link
+        external
+    }
+  }
+}
+</static-query>
+
 <script>
 import _ from "lodash";
 import ContentHeader from "~/components/Partials/ContentHeader.vue";
@@ -79,7 +102,7 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$page.page.title
+      title: `${this.$page.repo.title} - ${this.$page.page.title}`
     };
   },
   computed: {

@@ -1,5 +1,6 @@
 ---
-title: Gridsome Remark Plugin - Table Alignment
+id: gridsome-remark-table-align
+title: Remark Table Alignment
 description: Gridsome Remark plugin move the `table` align defintion to the `tableCell` definition.
 repository: noxify/gridsome-remark-table-align
 type: package

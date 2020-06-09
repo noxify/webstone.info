@@ -55,14 +55,7 @@
   }
 </page-query>
 
-<static-query>
-query {
-  metadata {
-    siteName
-    siteDescription
-  }
-}
-</static-query>
+
 
 <script>
 import CardItem from "~/components/Content/CardItem.vue";
@@ -71,7 +64,7 @@ import Pagination from "~/components/Content/Pagination.vue";
 
 export default {
   metaInfo: {
-    title: "Repositories"
+    title: "Documentation"
   },
   components: {
     CardItem,

@@ -102,7 +102,8 @@ module.exports = function (api) {
         component: './src/templates/DocumentationPage.vue',
         context: {
           id: node.id,
-          plugin: pluginName
+          plugin: pluginName,
+          pluginId: pluginName
         }
       });
 

@@ -63,7 +63,7 @@ export default {
     },
     sidebar : {
       type: Array,
-      default:[]
+      default: () => []
     }
   },
   data: function() {

@@ -7,7 +7,8 @@
       <div>
         <slot>
           <h2 v-if="title!=null" class="h1 font-extrabold dark:text-gray-400">{{ title }}</h2>
-          <p v-if="sub!=null" class="text-gray-600 text-light font-sans">{{ sub }}</p>
+          <p v-if="sub!=null && sub!=''" class="text-gray-600 text-light font-sans">{{ sub }}</p>
+          <p v-if="sub==null || sub==''" class="text-gray-600 text-light font-sans">&nbsp;</p>
         </slot>
       </div>
     </div>
