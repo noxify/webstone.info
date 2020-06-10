@@ -2,57 +2,38 @@
 title: Introduction
 ---
 
-# Remote Image Downloader
+# Remark Image Downloader
 
-This is a simple plugin, which is based on a discord discussion.
-It's more a workaround than a permanent solution.
+Simple plugin for `@gridsome/transformer-remark` to enable the download of remote images.
 
-The plugin should work with any data source, but I have tested it only with `source-filesystem`.
+## Installation
 
-## Features
-
-* Download of remote images
-* Support of multiple images ( see example )
-
-## Install
-
-```sh
-npm install -s https://github.com/noxify/gridsome-plugin-remote-image.git
-
-# or
-
-yarn add https://github.com/noxify/gridsome-plugin-remote-image.git
+```
+npm install -s https://github.com/noxify/gridsome-plugin-remark-image-download.git
 ```
 
 
 ## Usage
 
 ```js
-//gridsome.config.js
-
 module.exports = {
   siteName: 'Gridsome',
   plugins: [
     //...
-    {
-      use: '@noxify/gridsome-plugin-remote-image',
-      options: {
-        'typeName' : 'Entry',
-        'sourceField': 'remoteImage',
-        'targetField': 'imageDownloaded',
-        'targetPath': './src/assets/remoteImages'
-      }
-    },
-    {
-      use: '@noxify/gridsome-plugin-remote-image',
-      options: {
-        'typeName' : 'Entry',
-        'sourceField': 'remoteImages',
-        'targetField': 'imagesDownloaded',
-        'targetPath': './src/assets/remoteImages'
-      }
+  ],
+  templates: {
+    //...
+  },
+  transformers: {
+    //Add markdown support to all file-system sources
+    remark: {
+      plugins: [
+        ['@noxify/gridsome-plugin-remark-image-download', {
+          targetPath: './src/assets/contentImages'
+        }]
+      ]
     }
-  ]
-  //...
+  }
 }
+
 ```
