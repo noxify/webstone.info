@@ -2,6 +2,8 @@
 title: Configuration
 ---
 
+## Configuration
+
 | Name                 | Type      | Description                                                            | Default     |
 |----------------------|-----------|------------------------------------------------------------------------|-------------|
 | remote               | `String`  | Url to the repository                                                  | `null`      |

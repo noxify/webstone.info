@@ -2,7 +2,7 @@
 title: Introduction
 ---
 
-# Remark CSS Classes
+## Introduction
 
 Gridsome Remark plugin to embed external stuff into your gridsome site.
 

@@ -2,7 +2,7 @@
 title: Introduction
 ---
 
-# Remote Image Downloader
+## Introduction
 
 This is a simple plugin, which is based on a discord discussion.
 It's more a workaround than a permanent solution.

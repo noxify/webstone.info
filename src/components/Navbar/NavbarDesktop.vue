@@ -33,9 +33,9 @@
             <li class="mr-6">
               <search-button v-on="$listeners"></search-button>
             </li>
-            <li>
+            <!-- <li>
               <theme-switcher v-on="$listeners" :theme="theme" />
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>

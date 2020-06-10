@@ -2,7 +2,7 @@
 title: Usage
 ---
 
-# Global
+## Global
 
 Inside the `gridsome.config.js` you can define it globally to enable this transformer for all data sources.
 
@@ -29,7 +29,7 @@ module.exports = {
 }
 ```
 
-# Data Source
+## Data Source
 
 Inside the `gridsome.config.js` you can define it individual for each data source.
 

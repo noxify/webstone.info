@@ -102,7 +102,13 @@ module.exports = {
           noInlineHighlight: false,
           showLineNumbers: false,
         }],
-        require('./packages/gridsome-plugin-remark-figure')
+        require('./packages/gridsome-plugin-remark-figure'),
+        '@noxify/gridsome-remark-table-align',
+        [ '@noxify/gridsome-remark-classes', {
+          'table': 'table table-striped my-4',
+          'tableCell[align=center]': 'text-center',
+          'tableCell[align=right]': 'text-right'
+        } ]
       ],
       
       processImages: false

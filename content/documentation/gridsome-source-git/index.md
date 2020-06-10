@@ -2,7 +2,7 @@
 title: Introduction
 ---
 
-# Gridsome GIT Source
+## Introduction
 
 Source plugin for fetching data from a GIT repository. This source is based on the @gridsome/source-filesystem and includes all functionality which is available in the @gridsome/source-filesystem.
 

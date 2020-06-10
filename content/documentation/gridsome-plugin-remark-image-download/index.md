@@ -2,7 +2,7 @@
 title: Introduction
 ---
 
-# Remark Image Downloader
+## Introduction
 
 Simple plugin for `@gridsome/transformer-remark` to enable the download of remote images.
 

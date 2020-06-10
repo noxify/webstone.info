@@ -1,15 +1,16 @@
 <template>
-  <Layout :fixedHeader="true" :hideFooter="false" class="dark:bg-gray-900" :sidebar="sidebar">
-    <div class="container mx-auto dark:bg-gray-900">
+  <Layout :fixedHeader="true" :hideFooter="false" class="dark:bg-black" :sidebar="sidebar">
+    <content-header :title="$page.repo.title" :sub="$page.repo.description"></content-header>
+    <div class="container mx-auto dark:bg-black">
       <div class="w-full flex flex-row flex-wrap">
         <div class="w-full h-full flex flex-row flex-wrap post-content">
           <!-- Begin Navbar -->
 
           <div
-            class=" dark:text-gray-200 hidden md:block w-full md:w-1/4 lg:w-1/5 bg-white dark:bg-gray-900 border-r dark:border-gray-800"
+            class=" dark:text-gray-200 hidden md:block w-full md:w-1/4 lg:w-1/5 bg-white dark:bg-black border-r dark:border-gray-800"
           >
 
-            <div class="w-full sticky pin h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden mt-0 border border-grey-light lg:border-transparent bg-white shadow lg:shadow-none lg:bg-transparent z-20" style="top:5em;" id="menu-content">
+            <div class="w-full sticky pin h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden mt-0 border border-grey-light lg:border-transparent bg-white shadow lg:shadow-none lg:bg-transparent z-20 pt-4" style="top:5em;" id="menu-content">
                <div
                 class="sidebar-section block ml-4"
                 v-for="category in sidebar"
@@ -56,6 +57,7 @@
 
     repo: repository(id:$pluginId) {
       title
+      description
     }
 
     sidebar : allMenu(filter:{name:{eq:$plugin}}) {

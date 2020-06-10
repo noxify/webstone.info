@@ -2,7 +2,6 @@
 title: Example Public Repository
 ---
 
-
 ## Usage
 
 ```js
