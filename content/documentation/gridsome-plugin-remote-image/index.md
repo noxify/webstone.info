@@ -1,0 +1,53 @@
+---
+title: Introduction
+---
+
+# Remote Image Downloader
+
+This is a simple plugin, which is based on a discord discussion.
+It's more a workaround than a permanent solution.
+
+The plugin should work with any data source, but I have tested it only with `source-filesystem`.
+
+## Installation
+
+```sh
+npm install -s https://github.com/noxify/gridsome-plugin-remote-image.git
+
+# or
+
+yarn add https://github.com/noxify/gridsome-plugin-remote-image.git
+```
+
+
+## Usage
+
+```js
+//gridsome.config.js
+
+module.exports = {
+  siteName: 'Gridsome',
+  plugins: [
+    //...
+    {
+      use: '@noxify/gridsome-plugin-remote-image',
+      options: {
+        'typeName' : 'Entry',
+        'sourceField': 'remoteImage',
+        'targetField': 'imageDownloaded',
+        'targetPath': './src/assets/remoteImages'
+      }
+    },
+    {
+      use: '@noxify/gridsome-plugin-remote-image',
+      options: {
+        'typeName' : 'Entry',
+        'sourceField': 'remoteImages',
+        'targetField': 'imagesDownloaded',
+        'targetPath': './src/assets/remoteImages'
+      }
+    }
+  ]
+  //...
+}
+```

@@ -1,6 +1,6 @@
 {
 
-  "name": "gridsome-remark-table-align",
+  "name": "gridsome-plugin-remote-image",
   "links": [{
       "link": {
         "title": "Getting started",
@@ -14,8 +14,8 @@
         },
         {
           "link": {
-            "title": "Usage",
-            "url": "/usage"
+            "title": "Configuration",
+            "url": "/configuration"
           }
         },
         {

@@ -1,7 +1,7 @@
 ---
 id: gridsome-plugin-remark-image-download
 title: Remark Image Downloader
-description: Gridsome Remark plugin to embed external stuff into your gridsome site.
+description: Simple plugin for `@gridsome/transformer-remark` to enable the download of remote images.
 repository: noxify/gridsome-plugin-remark-image-download
 type: package
 demo: null

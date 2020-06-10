@@ -14,14 +14,8 @@
       },
       {
         "link": {
-          "title": "Installation",
-          "url": "/installation"
-        }
-      },
-      {
-        "link": {
-          "title": "Configuration",
-          "url": "/configuration"
+          "title": "Usage",
+          "url": "/usage"
         }
       }
     ]
