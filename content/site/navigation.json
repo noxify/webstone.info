@@ -1,10 +1,5 @@
 {
-  "headerNavigation": [
-    {
-      "name": "Home",
-      "link": "/",
-      "external": false
-    },
+  "unused_items": [
     {
       "name": "Blog",
       "link": "/blog",
@@ -13,6 +8,13 @@
     {
       "name": "Repositories",
       "link": "/repositories",
+      "external": false
+    }
+  ],
+  "headerNavigation": [
+    {
+      "name": "Home",
+      "link": "/",
       "external": false
     },
     {

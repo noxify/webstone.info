@@ -7,6 +7,9 @@
 module.exports = {
   siteName: 'Webstone.info',
   siteDescription: "Just another page built with gridsome",
+  permalinks : {
+    trailingSlash: false 
+  },
   plugins: [
     {
       use: 'gridsome-plugin-tailwindcss',
@@ -38,20 +41,6 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'Documentation',
-        path: './content/documentation/**/*.md'
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        typeName: 'Author',
-        path: './content/author/*.md'
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
         typeName: 'Repository',
         path: './content/repositories/*.md'
       }
@@ -59,21 +48,35 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'Blog',
-        path: './content/blog/**/*.md',
+        typeName: 'Documentation',
+        path: './content/documentation/**/*.md',
         refs: {
-          author: 'Author',
-          tags: {
-            typeName: 'Tag',
-            create: true
-          },
-          category: {
-            typeName: 'Category',
-            create: true
-          }
+          repository: 'Repository'
         }
       }
     },
+    // {
+    //   use: '@gridsome/source-filesystem',
+    //   options: {
+    //     typeName: 'Author',
+    //     path: './content/author/*.md'
+    //   }
+    // },
+    
+    // {
+    //   use: '@gridsome/source-filesystem',
+    //   options: {
+    //     typeName: 'Blog',
+    //     path: './content/blog/**/*.md',
+    //     refs: {
+    //       author: 'Author',
+    //       tags: {
+    //         typeName: 'Tag',
+    //         create: true
+    //       }
+    //     }
+    //   }
+    // },
     {
       use: '@gridsome/source-filesystem',
       options: {
@@ -86,9 +89,9 @@ module.exports = {
       options: {
         searchFields: ['title', 'content'],
         collections: [{
-          typeName: 'Blog',
-          indexName: 'Blog',
-          fields: ['title', 'category', 'excerpt', 'content']
+          typeName: 'Documentation',
+          indexName: 'Documentation',
+          fields: ['title', 'repository', 'content']
         }]
       }
     }
@@ -116,25 +119,21 @@ module.exports = {
     }
   },
   templates: {
-    Blog: [{
+    /*Blog: [{
       path: '/posts/:title'
-    }],
+    }],*/
     CustomPage: [{
       path: '/:title',
       component: '~/templates/CustomPage.vue'
     }],
-    Category: [{
-      path: '/category/:title',
-      component: '~/templates/Category.vue'
-    }],
-    Author: [{
+    /*Author: [{
       path: '/author/:name',
       component: '~/templates/Author.vue'
     }],
     Tag: [{
       path: '/tags/:title',
       component: '~/templates/Tag.vue'
-    }]
+    }]*/
   },
   chainWebpack: config => {
       config.resolve.alias.set('@pageImage', '@/assets/images');

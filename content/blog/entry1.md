@@ -1,9 +1,8 @@
 ---
-title: Troes retardat
+title: Welcome to the jungle
 tags: tag1, tag2
-category: Digital
-excerpt: Lorem markdownum aptos pes, Inachidos caput corrumpere! Vincere ferocia arva.
-created: 2019-01-10
+excerpt: The domain is dead long live the domain
+created: 2020-06-12
 image: ./images/preview1.png
 author: marcusreinhardt
 ---

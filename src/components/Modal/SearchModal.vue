@@ -16,6 +16,8 @@
               class="flex-shrink flex-grow flex-auto text-gray-700 dark:text-gray-600 leading-normal w-px flex-1 border h-12 text-xl md:h-16 md:text-3xl border-l-0 focus:outline-none focus:shadow-none border-gray-500 dark:bg-gray-900 dark:border-gray-700 rounded rounded-l-none px-3 relative"
               placeholder="Search..."
               id="search"
+              autocomplete="off"
+              autofocus
               v-model="searchTerm"
             />
           </div>
@@ -35,14 +37,11 @@
                 
               >
                 <div class="h-full flex items-start hover:bg-gray-200 dark:bg-gray-900 dark-hover:bg-gray-800 rounded-lg">
-                  <div class="flex-grow px-6">
-                    <h2
-                      class="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1"
-                    >{{ resultEntry.node.category}}</h2>
+                  <div class="flex-grow px-6 my-3">
                     <h1
-                      class="title-font text-xl font-medium text-gray-900 dark:text-gray-400 mb-3"
+                      class="title-font text-xl font-medium text-gray-900 dark:text-gray-400 mb-1 mt-0"
                     >{{ resultEntry.title }}</h1>
-                    <p class="leading-relaxed mb-5 dark:text-gray-500">{{ resultEntry.node.excerpt }}</p>
+                    <span class="bg-blue-200 rounded-lg py-1 px-2 leading-relaxed mb-5 dark:text-gray-500">{{ resultEntry.node.repository }}</span>
                   </div>
                 </div>
               </g-link>
@@ -63,7 +62,7 @@ export default {
     searchResults() {
       const searchTerm = this.searchTerm;
       if (searchTerm.length < 3) return [];
-      return this.$search.search({ query: searchTerm, limit: 5 });
+      return this.$search.search({ query: searchTerm, limit: 20 });
     }
   }
 };

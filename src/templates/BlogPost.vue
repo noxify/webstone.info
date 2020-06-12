@@ -131,22 +131,7 @@
         title
         path
       }
-      category {
-        id
-        title
-        path
-        belongsTo(limit:4) {
-          totalCount
-          edges {
-            node {
-              ... on Blog {
-                title
-                path
-              }
-            }
-          }
-        }
-      }
+      
       author {
         id
         name
@@ -165,41 +150,26 @@
       edges {
         node {
           title
-      path
-      image(width:1600, height:800)
-      excerpt
-      content
-      humanTime : created(format:"DD MMMM YYYY")
-      datetime : created(format:"ddd MMM DD YYYY hh:mm:ss zZ")
-      
-      timeToRead
-      tags {
-        id
-        title
-        path
-      }
-      category {
-        id
-        title
-        path
-        belongsTo(limit:4) {
-          totalCount
-          edges {
-            node {
-              ... on Blog {
-                title
-                path
-              }
-            }
+          path
+          image(width:1600, height:800)
+          excerpt
+          content
+          humanTime : created(format:"DD MMMM YYYY")
+          datetime : created(format:"ddd MMM DD YYYY hh:mm:ss zZ")
+          
+          timeToRead
+          tags {
+            id
+            title
+            path
           }
-        }
-      }
-      author {
-        id
-        name
-        image
-        path
-      }
+          
+          author {
+            id
+            name
+            image
+            path
+          }
         }
       }
     }

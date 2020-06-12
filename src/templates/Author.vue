@@ -97,17 +97,6 @@
               featured
               humanTime: created(format: "DD MMM YYYY")
               datetime: created
-              category {
-                id
-                title
-                path
-              }
-              author {
-                id
-                name
-                image(width: 64, height: 64, fit: inside)
-                path
-              }
             }
           }
         }

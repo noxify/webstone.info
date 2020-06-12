@@ -23,6 +23,20 @@ module.exports = function (api) {
     }
     if (options.internal.typeName === 'CustomPage') {
       options.subtitle = options.subtitle || ''
+      return {
+        ...options
+      };
+    }
+    if( options.internal.typeName === 'Documentation') {
+      options.path = options.path.replace('/content/', '/')
+      
+      var pathArray = options.path.split('/')
+      const pluginName = pathArray[ 2 ];
+      options.repository = pluginName;
+      
+      return {
+        ...options
+      };
     }
   })
 
@@ -46,28 +60,29 @@ module.exports = function (api) {
         }
       }
     }`);
+    if( data ) {
+      data.allBlog.edges.forEach(({
+        node
+      }) => {
 
-    data.allBlog.edges.forEach(({
-      node
-    }) => {
+        //without the map, you will get an 500 error
+        //because the graphql filter requires an array
+        //not an object
+        var tags = _.map(node.tags, function (tag) {
+          return tag.title;
+        });
 
-      //without the map, you will get an 500 error
-      //because the graphql filter requires an array
-      //not an object
-      var tags = _.map(node.tags, function (tag) {
-        return tag.title;
+        createPage({
+          path: node.path,
+          component: './src/templates/BlogPost.vue',
+          context: {
+            recordId: node.id,
+            tags: tags,
+          }
+        });
+
       });
-
-      createPage({
-        path: node.path,
-        component: './src/templates/BlogPost.vue',
-        context: {
-          recordId: node.id,
-          tags: tags,
-        }
-      });
-
-    });
+    }
   });
 
   api.createPages(async ({
@@ -93,12 +108,10 @@ module.exports = function (api) {
     }) => {
 
       var pathArray = node.path.split('/')
-      pathArray.splice(1, 1)
-
       const pluginName = pathArray[2];
 
       createPage({
-        path: pathArray.join('/'),
+        path: node.path,
         component: './src/templates/DocumentationPage.vue',
         context: {
           id: node.id,

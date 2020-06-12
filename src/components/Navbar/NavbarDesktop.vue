@@ -45,7 +45,7 @@
 <script>
 import ThemeSwitcher from "~/components/Navbar/ThemeSwitcher.vue";
 import SearchButton from "~/components/Navbar/SearchButton.vue";
-import Subnavigation from "~/components/Navbar/NavbarSubNavigation.vue";
+// import Subnavigation from "~/components/Navbar/NavbarSubNavigation.vue";
 
 export default {
   data: function() {
@@ -60,7 +60,7 @@ export default {
   components: {
     ThemeSwitcher,
     SearchButton,
-    Subnavigation  
+    // Subnavigation  
   },
   props: {
     theme: {

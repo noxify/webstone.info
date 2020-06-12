@@ -119,7 +119,7 @@ export default {
     isActive(url) {
       const pageUrl = this.urlLink(url);
       const pathUrl = this.$route.path;
-      return pageUrl == pathUrl;
+      return pageUrl == pathUrl || pageUrl+'/' == pathUrl;
     }
   },
   mounted() {
