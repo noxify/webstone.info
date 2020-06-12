@@ -86,12 +86,12 @@ module.exports = {
     }
   },
   variants: {
-    backgroundColor: ['responsive', 'hover', 'focus', 'dark', 'dark-hover', 'dark-focus'],
-    textColor: ['responsive', 'hover', 'focus', 'dark', 'dark-hover', 'dark-focus'],
-    borderColor: ['responsive', 'hover', 'focus', 'dark', 'dark-hover', 'dark-focus']
+    //backgroundColor: ['responsive', 'hover', 'focus', 'dark', 'dark-hover', 'dark-focus'],
+    //textColor: ['responsive', 'hover', 'focus', 'dark', 'dark-hover', 'dark-focus'],
+    //borderColor: ['responsive', 'hover', 'focus', 'dark', 'dark-hover', 'dark-focus']
   },
   plugins: [
-    require('tailwindcss-dark-mode')(),
+    //require('tailwindcss-dark-mode')(),
     require('tailwindcss-tables')(),
     function ({
       addUtilities,
