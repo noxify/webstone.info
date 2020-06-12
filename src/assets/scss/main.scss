@@ -469,6 +469,7 @@ pre[class*="language-"] {
   margin: .5em 0;
   overflow: auto;
   @apply bg-gray-200;
+  @apply rounded-lg;
 }
 
 :not(pre)>code[class*="language-"] {
