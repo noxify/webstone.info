@@ -14,7 +14,7 @@
           <div class="flex flex-col min-h-full">
             <div class="px-6 py-6 flex-grow">
               <h3 class="text-xl mt-0">{{ edge.node.title }}</h3>
-              <p v-html="edge.node.content"></p>
+              <div v-html="edge.node.content"></div>
             </div>
           </div>
         </g-link>

@@ -2,7 +2,7 @@
   <Layout :fixedHeader="true" :hideFooter="false" class="dark:bg-black" :sidebar="sidebar">
     <content-header>
       <h2 class="h1 font-extrabold dark:text-gray-400">{{ $page.repo.title }}</h2>
-      <p class="text-gray-600 text-light font-sans" v-html="$page.repo.content"></p>
+      <div v-html="$page.repo.content"></div>
 
       <div>
         <div class="inline-block text-center px-2 py-2">
