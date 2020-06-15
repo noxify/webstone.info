@@ -91,7 +91,7 @@ You have the right to demand that we hand over any data we automatically process
 
 ### SSL and/or TLS encryption
 
-For security reasons and to protect the transmission of confidential content, such as purchase orders or inquiries you submit to us as the website operator, this website uses either an SSL or a TLS encryption program. You can recognize an encrypted connection by checking whether the address line of the browser switches from “http://” to “https://” and also by the appearance of the lock icon in the browser line.
+For security reasons and to protect the transmission of confidential content, such as purchase orders or inquiries you submit to us as the website operator, this website uses either an SSL or a TLS encryption program. You can recognize an encrypted connection by checking whether the address line of the browser switches from `http://` to `https://` and also by the appearance of the lock icon in the browser line.
 <br><br>
 If the SSL or TLS encryption is activated, data you transmit to us cannot be read by third parties.
 
