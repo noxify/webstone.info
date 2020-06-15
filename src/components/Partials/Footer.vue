@@ -8,6 +8,7 @@
             href="https://www.gridsome.org"
             target="_blank"
             class="hover:text-blue-500"
+            rel="noreferrer"
           >Gridsome</a>
         </p>
       </div>
@@ -25,6 +26,7 @@
               :href="navItem.link"
               target="_blank"
               :title="navItem.name"
+              rel="noreferrer"
               v-if="navItem.external==true"
             >{{ navItem.name}}</a>
           </li>
