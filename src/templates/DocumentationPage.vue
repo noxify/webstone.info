@@ -2,9 +2,9 @@
   <Layout :fixedHeader="true" :hideFooter="false" class="dark:bg-black" :sidebar="sidebar">
     <content-header>
       <h2 class="h1 font-extrabold dark:text-gray-400">{{ $page.repo.title }}</h2>
-      <p class="text-gray-600 text-light font-sans">{{ $page.repo.description }}</p>
+      <p class="text-gray-600 text-light font-sans" v-html="$page.repo.content"></p>
 
-      <div class="bg-gray-200">
+      <div>
         <div class="inline-block text-center px-2 py-2">
           <a :href="`https://github.com/${$page.repo.repository}/issues`" target="_blank">
             <img
@@ -33,7 +33,7 @@
           <a :href="`https://github.com/${$page.repo.repository}/blob/master/LICENSE`" target="_blank">
             <img
               alt="GitHub license"
-              :src="`https://img.shields.io/github/license/${$page.repo.repository}?style=social`"
+              :src="`https://img.shields.io/github/license/${$page.repo.repository}?style=social&label=License`"
             />
           </a>
         </div>
@@ -95,7 +95,7 @@
 
     repo: repository(id:$pluginId) {
       title
-      description
+      content
       repository
     }
 

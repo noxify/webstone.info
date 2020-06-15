@@ -2,53 +2,44 @@
 title: Imprint
 ---
 
-## Ossa narrat sortita fecerat sit conataque
+### Information pursuant to Sect. 5 German Telemedia Act (TMG)
+Marcus Reinhardt
 
-Lorem markdownum aptos pes, Inachidos caput corrumpere! Hanc haud quam [est
-candore](http://quisquis-in.io/ramossuperum) conpulit meriti. Vincere ferocia
-arva.
+Eberstädter Strasse 121
 
-## Eleis celeberrimus loci ait falsa infelix tuoque
+64319 Pfungstadt
 
-Mox haberet ambae torique dedisses quibus que membraque nervo remanet, digiti
-iam neve clamorque fallaces. Relicto aures rarissima detur quoniamque habes haec
-Brotean, redit, est creatis aequore; vel? Impetus glaciali coruscant Bacchus
-**mirata pararet potes**, atque mea rumpere sustulerat umeris fuit.
+Germany
 
-## Facundis quid
+#### Contact
 
-Venerit conveniunt per memori sed laniarat Dromas, solum tum. Undis lacteus
-infitiatur adest [acies certius](http://www.tollit-clamavit.io/) inscius, cum ad
-emittunt dextra.
+Phone: +49 151 11334215
 
-Fronde ait ferox medium, virginis igni sanguine micant: **inertia** ore quoque?
-Iaculi quicquid **virescere misit stirpe** Theseus Venerem! Falce taceo oves,
-idem fugit, non abiit palam quantum, fontes vinci et abiit. Deiectoque exstabant
-**Phrygiae** cepit munus tanto.
+E-mail: webstone@gmail.com
 
-## Et capienda Peneia
+### Responsible for the content according to Sect. 55, paragraph 2 RStV
 
-*Haec moenia pater* signataque urget, ait quies laqueo sumitque. Misit sit
-moribunda terrae sequar longis hoc, cingebant copia cultros! Alis templi taeda
-solet suum mihi penates quae. Cecidere *deo agger infantem* indetonsusque ipsum;
-ova formasque cornu et pectora [voce oculos](http://www.tibibene.io/iter.html),
-prodis pariterque sacra finibus, Sabinae. Fugarant fuerat, famam ait toto imas
-sorte pectora, est et, procubuit sua Appenninigenae habes postquam.
+Marcus Reinhardt
 
-## Quoque aut gurgite aliquis igneus
+Eberstädter Strasse 121
 
-Spatiosa ferax iam sis ex quae peperit iacentes, grates rogat quae senserat nec
-nec verba harenas inplent. Per dum necis in in versus quin loquendi latens;
-inde. **Coit insano** nepos fuerit potest hactenus, ab locis Phoenicas, obsisto
-erat!
+64319 Pfungstadt
 
-> Nec uterum Aurorae petentes abstulit. Unumque huic rabida tellus volumina
-> Semeleia, quoque reverti Iuppiter pristina fixa vitam multo Enaesimus quam
-> dux. Sua **damus** decipere, ut **obortas** nomen sine vestrae vita.
+Germany
 
-Turbine ora sum securae, purpureae lacertis Pindumve superi: tellus liquerat
-**carinis**. Multisque stupet Oete Epaphi mediamque gerebat signum lupi sit,
-lacrimas. Tumidi fassusque hosti, deus [vixque desint
-dedit](http://hisnurus.com/putares-pars) dum et, quo non, dea [suras
-tantum](http://mactata.org/inducere.php). Unus acta capulo. In Dryope sic
-vestigia est neu ignis in **illa mirantur agilis** densior.
+
+### Liability for Contents
+As service providers, we are liable for own contents of these websites according to Paragraph 7, Sect. 1 German Telemedia Act (TMG). However, according to Paragraphs 8 to 10 German Telemedia Act (TMG), service providers are not obligated to permanently monitor submitted or stored information or to search for evidences that indicate illegal activities.
+<br><br>
+Legal obligations to removing information or to blocking the use of information remain unchallenged. In this case, liability is only possible at the time of knowledge about a specific violation of law. Illegal contents will be removed immediately at the time we get knowledge of them.
+
+### Liability for Links
+Our offer includes links to external third party websites. We have no influence on the contents of those websites, therefore we cannot guarantee for those contents. Providers or administrators of linked websites are always responsible for their own contents.
+<br><br>
+The linked websites had been checked for possible violations of law at the time of the establishment of the link. Illegal contents were not detected at the time of the linking. A permanent monitoring of the contents of linked websites cannot be imposed without reasonable indications that there has been a violation of law. Illegal links will be removed immediately at the time we get knowledge of them.
+
+### Copyright
+Contents and compilations published on these websites by the providers are subject to German copyright laws. Reproduction, editing, distribution as well as the use of any kind outside the scope of the copyright law require a written permission of the author or originator. Downloads and copies of these websites are permitted for private use only.
+The commercial use of our contents without permission of the originator is prohibited.
+<br><br>
+Copyright laws of third parties are respected as long as the contents on these websites do not originate from the provider. Contributions of third parties on this site are indicated as such. However, if you notice any violations of copyright law, please inform us. Such contents will be removed immediately.

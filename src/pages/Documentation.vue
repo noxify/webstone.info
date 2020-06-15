@@ -14,7 +14,7 @@
           <div class="flex flex-col min-h-full">
             <div class="px-6 py-6 flex-grow">
               <h3 class="text-xl mt-0">{{ edge.node.title }}</h3>
-              <p>{{ edge.node.description }}</p>
+              <p v-html="edge.node.content"></p>
             </div>
           </div>
         </g-link>
@@ -33,25 +33,14 @@
         node {
           id
           title
-          description
+          content
           repository
           docs 
         }
       }
     }
 
-    starters: allRepository(filter:{type:{eq:"starter"}}){
-      
-      edges {
-        node {
-          id
-          title
-          description
-          repository
-          demo 
-        }
-      }
-    }
+    
   }
 </page-query>
 
