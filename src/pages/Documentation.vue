@@ -13,7 +13,7 @@
         <g-link :to="edge.node.docs">
           <div class="flex flex-col min-h-full">
             <div class="px-6 py-6 flex-grow">
-              <h3 class="text-xl">{{ edge.node.title }}</h3>
+              <h3 class="text-xl mt-0">{{ edge.node.title }}</h3>
               <p>{{ edge.node.description }}</p>
             </div>
           </div>

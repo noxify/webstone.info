@@ -1,17 +1,58 @@
 <template>
   <Layout :fixedHeader="true" :hideFooter="false" class="dark:bg-black" :sidebar="sidebar">
-    <content-header :title="$page.repo.title" :sub="$page.repo.description"></content-header>
+    <content-header>
+      <h2 class="h1 font-extrabold dark:text-gray-400">{{ $page.repo.title }}</h2>
+      <p class="text-gray-600 text-light font-sans">{{ $page.repo.description }}</p>
+
+      <div class="bg-gray-200">
+        <div class="inline-block text-center px-2 py-2">
+          <a :href="`https://github.com/${$page.repo.repository}/issues`" target="_blank">
+            <img
+              alt="GitHub issues"
+              :src="`https://img.shields.io/github/issues/${$page.repo.repository}?style=social`"
+            />
+          </a>
+        </div>
+        <div class="inline-block text-center px-2 py-2">
+          <a :href="`https://github.com/${$page.repo.repository}/stargazers`" target="_blank">
+            <img
+              alt="GitHub issues"
+              :src="`https://img.shields.io/github/stars/${$page.repo.repository}?style=social`"
+            />
+          </a>
+        </div>
+        <div class="inline-block text-center px-2 py-2">
+          <a :href="`https://github.com/${$page.repo.repository}/network`" target="_blank">
+            <img
+              alt="GitHub issues"
+              :src="`https://img.shields.io/github/forks/${$page.repo.repository}?style=social`"
+            />
+          </a>
+        </div>
+        <div class="inline-block text-center px-2 py-2">
+          <a :href="`https://github.com/${$page.repo.repository}/blob/master/LICENSE`" target="_blank">
+            <img
+              alt="GitHub license"
+              :src="`https://img.shields.io/github/license/${$page.repo.repository}?style=social`"
+            />
+          </a>
+        </div>
+      </div>
+    </content-header>
     <div class="container mx-auto dark:bg-black">
       <div class="w-full flex flex-row flex-wrap">
         <div class="w-full h-full flex flex-row flex-wrap post-content">
           <!-- Begin Navbar -->
 
           <div
-            class=" dark:text-gray-200 hidden md:block w-full md:w-1/4 lg:w-1/5 bg-white dark:bg-black border-r dark:border-gray-800"
+            class="dark:text-gray-200 hidden md:block w-full md:w-1/4 lg:w-1/5 bg-white dark:bg-black border-r dark:border-gray-800"
           >
-
-            <div class="w-full sticky pin h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden mt-0 border border-grey-light lg:border-transparent bg-white shadow lg:shadow-none lg:bg-transparent z-20 pt-4" style="top:5em;" id="menu-content">
-               <div
+            <div
+              class="w-full sticky pin h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden mt-0 border border-grey-light lg:border-transparent bg-white shadow lg:shadow-none lg:bg-transparent z-20 pt-4"
+              style="top:5em;"
+              id="menu-content"
+            >
+              <div
                 class="sidebar-section block ml-4"
                 v-for="category in sidebar"
                 :key="category.id"
@@ -30,17 +71,14 @@
                 </div>
               </div>
             </div>
-
-          
-
-            
           </div>
 
           <!-- End Navbar -->
 
-          <div class="w-full min-h-screen md:w-3/4 lg:w-4/5 px-4 mt-1 mb-12 md:px-12 dark:text-gray-200">
+          <div
+            class="w-full min-h-screen md:w-3/4 lg:w-4/5 px-4 mt-1 mb-12 md:px-12 dark:text-gray-200"
+          >
             <div v-html="$page.page.content"></div>
-            
           </div>
         </div>
       </div>
@@ -58,6 +96,7 @@
     repo: repository(id:$pluginId) {
       title
       description
+      repository
     }
 
     sidebar : allMenu(filter:{name:{eq:$plugin}}) {
@@ -119,7 +158,7 @@ export default {
     isActive(url) {
       const pageUrl = this.urlLink(url);
       const pathUrl = this.$route.path;
-      return pageUrl == pathUrl || pageUrl+'/' == pathUrl;
+      return pageUrl == pathUrl || pageUrl + "/" == pathUrl;
     }
   },
   mounted() {
