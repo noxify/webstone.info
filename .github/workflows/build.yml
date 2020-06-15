@@ -26,3 +26,8 @@ jobs:
           BASE_BRANCH: master
           BRANCH: gh-pages
           FOLDER: dist
+
+      - name: Update Remote Host
+        uses: joelwmale/webhook-action@master
+        env:
+          WEBHOOK_URL: ${{ secrets.REMOTE_WEBHOOK }}
