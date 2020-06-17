@@ -5,6 +5,20 @@
     <meta data-privacy-proxy-server="https://privacy-proxy-server.usercentrics.eu">
     <script type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js">
     </script>
+    
+    <script type="text/plain" data-usercentrics="Google Analytics" async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-169862956-1"></script>
+    <script type="text/plain" data-usercentrics="Google Analytics">
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-169862956-1', {
+        'anonymize_ip': true
+      });
+    </script>
     ${head}
   </head>
   <body ${bodyAttrs}>
