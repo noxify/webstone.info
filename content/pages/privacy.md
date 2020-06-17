@@ -13,17 +13,17 @@ The following information will provide you with an easy to navigate overview of 
 **Who is the responsible party for the recording of data on this website (i.e. the “controller”)?**
 
 The data on this website is processed by the operator of the website, whose contact information is available under section “Information Required by Law” on this website.
-<br><br>
+
 **How do we record your data?**
 
 We collect your data as a result of your sharing of your data with us. This may, for instance be information you enter into our contact form.
 <br><br>
 Other data shall be recorded by our IT systems automatically or after you consent to its recording during your website visit. This data comprises primarily technical information (e.g. web browser, operating system or time the site was accessed). This information is recorded automatically when you access this website.
-<br><br>
+
 **What are the purposes we use your data for?**
 
 A portion of the information is generated to guarantee the error free provision of the website. Other data may be used to analyze your user patterns.
-<br><br>
+
 **What rights do you have as far as your information is concerned?**
 
 You have the right to receive information about the source, recipients and purposes of your archived personal data at any time without having to pay a fee for such disclosures. You also have the right to demand that your data are rectified or eradicated. If you have consented to data processing, you have the option to revoke this consent at any time, which shall affect all future data processing. Moreover, you have the right to demand that the processing of your data be restricted under certain circumstances. Furthermore, you have the right to log a complaint with the competent supervising agency.
@@ -35,7 +35,6 @@ Please do not hesitate to contact us at any time under the address disclosed in 
 There is a possibility that your browsing patterns will be statistically analyzed when your visit this website. Such analyses are performed primarily with what we refer to as analysis programs.
 <br><br>
 For detailed information about these analysis programs please consult our Data Protection Declaration below.
-
 
 ## 2\. Hosting and Content Delivery Networks (CDN)
 
@@ -107,7 +106,7 @@ You have the right to demand the imposition of restrictions as far as the proces
 *   If the processing of your personal data was/is conducted in an unlawful manner, you have the option to demand the restriction of the processing of your data in lieu of demanding the eradication of this data.
 *   If we do not need your personal data any longer and you need it to exercise, defend or claim legal entitlements, you have the right to demand the restriction of the processing of your personal data instead of its eradication.
 *   If you have raised an objection pursuant to Art. 21 Sect. 1 GDPR, your rights and our rights will have to be weighed against each other. As long as it has not been determined whose interests prevail, you have the right to demand a restriction of the processing of your personal data.
-
+<br><br>
 If you have restricted the processing of your personal data, these data – with the exception of their archiving – may be processed only subject to your consent or to claim, exercise or defend legal entitlements or to protect the rights of other natural persons or legal entities or for important public interest reasons cited by the European Union or a member state of the EU.
 
 ## 4\. Recording of data on this website
@@ -163,7 +162,33 @@ The use of Twitter plug-ins is based on Art. 6 Sect. 1 lit. f GDPR. The operator
 <br><br>
 You have the option to reset your data protection settings on Twitter under the account settings at [https://twitter.com/account/settings](https://twitter.com/account/settings).
 
-## 6\. Plug-ins and Tools
+## 6\. Analysis tools and advertising
+
+### Google Analytics
+
+This website uses functions of the web analysis service Google Analytics. The provider of this service is Google Ireland Limited (“Google”), Gordon House, Barrow Street, Dublin 4, Ireland.
+<br><br>
+Google Analytics enables the website operator to analyze the behavior patterns of website visitors. To that end, the website operator receives a variety of user data, such as pages accessed, time spent on the page, the utilized operating system and the user’s origin. Google may consolidate these data in a profile that is allocated to the respective user or the user’s device.
+<br><br>
+Google Analytics uses technologies that make the recognition of the user for the purpose of analyzing the user behavior patterns (e.g. cookies or device fingerprinting). The website use information recorded by Google is, as a rule transferred to a Google server in the United States, where it is stored.
+<br><br>
+This analysis tool is used on the basis of Art. 6 Sect. 1 lit. f GDPR. The operator of this website has a legitimate interest in the analysis of user patterns to optimize both, the services offered online and the operator’s advertising activities. If a corresponding agreement has been requested (e.g. an agreement to the storage of cookies), the processing takes place exclusively on the basis of Art. 6 para. 1 lit. a GDPR; the agreement can be revoked at any time.
+<br><br>
+**IP anonymization**
+
+On this website, we have activated the IP anonymization function. As a result, your IP address will be abbreviated by Google within the member states of the European Union or in other states that have ratified the Convention on the European Economic Area prior to its transmission to the United States. The full IP address will be transmitted to one of Google’s servers in the United States and abbreviated there only in exceptional cases. On behalf of the operator of this website, Google shall use this information to analyze your use of this website to generate reports on website activities and to render other services to the operator of this website that are related to the use of the website and the Internet. The IP address transmitted in conjunction with Google Analytics from your browser shall not be merged with other data in Google’s possession.
+<br><br>
+**Browser plug-in**
+
+You can prevent the recording and processing of your data by Google by downloading and installing the browser plugin available under the following link: [https://tools.google.com/dlpage/gaoptout?hl=en](https://tools.google.com/dlpage/gaoptout?hl=en).
+<br><br>
+For more information about the handling of user data by Google Analytics, please consult Google’s Data Privacy Declaration at: [https://support.google.com/analytics/answer/6004245?hl=en](https://support.google.com/analytics/answer/6004245?hl=en).
+<br><br>
+**Archiving period**
+
+Data on the user or incident level stored by Google linked to cookies, user IDs or advertising IDs (e.g. DoubleClick cookies, Android advertising ID) will be anonymized or deleted after 14 month. For details please click the following link: [https://support.google.com/analytics/answer/7667196?hl=en](https://support.google.com/analytics/answer/7667196?hl=en)
+
+## 7\. Plug-ins and Tools
 
 ### YouTube with expanded data protection integration
 
