@@ -29,6 +29,8 @@ module.exports = {
   siteName: 'Gridsome',
   plugins: [
     //...
+    
+    //single image - cache:true - original: false
     {
       use: '@noxify/gridsome-plugin-remote-image',
       options: {
@@ -38,12 +40,36 @@ module.exports = {
         'targetPath': './src/assets/remoteImages'
       }
     },
+    //multiple image - cache:true - original: false
     {
       use: '@noxify/gridsome-plugin-remote-image',
       options: {
         'typeName' : 'Entry',
         'sourceField': 'remoteImages',
         'targetField': 'imagesDownloaded',
+        'targetPath': './src/assets/remoteImages'
+      }
+    },
+    
+    //single image - cache:true - original: true
+    {
+      use: '@noxify/gridsome-plugin-remote-image',
+      options: {
+        'original' : true,
+        'typeName' : 'Entry',
+        'sourceField': 'remoteImage',
+        'targetField': 'imageDownloaded',
+        'targetPath': './src/assets/remoteImages'
+      }
+    },
+    //single image - cache:false - original: false
+    {
+      use: '@noxify/gridsome-plugin-remote-image',
+      options: {
+        'cache': false,
+        'typeName' : 'Entry',
+        'sourceField': 'remoteImage',
+        'targetField': 'imageDownloaded',
         'targetPath': './src/assets/remoteImages'
       }
     }
