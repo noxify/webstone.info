@@ -17,8 +17,7 @@ npm install -s @noxify/gridsome-plugin-remark-embed
 
 ### With default settings
 
-```js
-//gridsome.config.js
+```js:title=gridsome.config.js
 module.exports = {
   plugins: [
     {
@@ -41,8 +40,7 @@ module.exports = {
 
 ### With provider configuration
 
-```js
-//gridsome.config.js
+```js:title=gridsome.config.js
 module.exports = {
   plugins: [
     {

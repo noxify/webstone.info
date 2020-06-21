@@ -16,7 +16,7 @@ title: Example Private Repository
 
 ## Usage
 
-```js
+```js:title=gridsome.config.js
 module.exports = {
   siteName: 'Gridsome',
   plugins: [

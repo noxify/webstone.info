@@ -15,7 +15,7 @@ npm install -s https://github.com/noxify/gridsome-plugin-remark-image-download.g
 
 ## Usage
 
-```js
+```js:title=gridsome.config.js
 module.exports = {
   siteName: 'Gridsome',
   plugins: [
@@ -35,5 +35,4 @@ module.exports = {
     }
   }
 }
-
 ```

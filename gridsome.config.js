@@ -101,6 +101,9 @@ module.exports = {
       plugins: [
         'remark-autolink-headings',
         'remark-attr',
+        ['gridsome-plugin-remark-codetitle', {
+          className: 'codeblock-title'
+        }],
         ['gridsome-plugin-remark-prismjs-all', {
           noInlineHighlight: false,
           showLineNumbers: false,

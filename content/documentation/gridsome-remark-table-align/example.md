@@ -12,9 +12,9 @@ title: Example
 | col 3 is | right-aligned |    $1 |
 ```
 
-## gridsome.config.js
+## Configuration
 
-```js
+```js:title=gridsome.config.js
 transformers : {
   remark : {
     plugins : [

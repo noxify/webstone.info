@@ -4,9 +4,9 @@ title: Usage
 
 ## Global
 
-Inside the `gridsome.config.js` you can define it globally to enable this transformer for all data sources.
+You can define it globally to enable this transformer for all data sources.
 
-```js
+```js:title=gridsome.config.js
 module.exports = {
 
   plugins: [
@@ -35,9 +35,9 @@ module.exports = {
 
 ## Data Source
 
-Inside the `gridsome.config.js` you can define it individual for each data source.
+You can define it individual for each data source.
 
-```js
+```js:title=gridsome.config.js
 module.exports = {
 
   plugins: [

@@ -7,9 +7,7 @@ title: Example Filesystem
 
 ## Markdown Files
 
-> /content/entries/entry1.md
-
-```md
+```md:title=/content/entries/entry1.md
 ---
 title: First Post
 remoteImage: https://images.unsplash.com/photo-1580451998921-c1e6e1ababe0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80
@@ -18,9 +16,7 @@ remoteImage: https://images.unsplash.com/photo-1580451998921-c1e6e1ababe0?ixlib=
 Image Credits: https://unsplash.com/
 ```
 
-> /content/entries/entry2.md
-
-```md
+```md:title=/content/entries/entry1.md
 ---
 title: Second Post
 excerpt: Second Post
@@ -35,7 +31,7 @@ Image Credits: https://unsplash.com/
 
 ## Configuration
 
-```js
+```js:title=gridsome.config.js
 module.exports = {
   siteName: 'Gridsome',
   plugins: [

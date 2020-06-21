@@ -5,7 +5,7 @@ title: Example Sanity
 
 ## Configuration
 
-```js
+```js:title=gridsome.config.js
 module.exports = {
   siteName: 'Gridsome',
   plugins: [

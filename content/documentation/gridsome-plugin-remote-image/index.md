@@ -22,9 +22,7 @@ yarn add https://github.com/noxify/gridsome-plugin-remote-image.git
 
 ## Usage
 
-```js
-//gridsome.config.js
-
+```js:title=gridsome.config.js
 module.exports = {
   siteName: 'Gridsome',
   plugins: [

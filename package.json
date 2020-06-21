@@ -39,6 +39,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/vue-fontawesome": "^0.1.9",
+    "gridsome-plugin-remark-codetitle": "^0.2.2",
     "gridsome-plugin-tailwindcss": "^2.2.48",
     "tailwindcss-dark-mode": "^1.1.4"
   }

@@ -5,7 +5,7 @@ title: Custom Template
 You can overwrite the default provider template.
 Just add the `template` property with the path to the `.hbs` template inside your provider config.
 
-```js
+```js:title=gridsome.config.js
 remark: {
   plugins: [
     [ '@noxify/gridsome-plugin-remark-embed', {

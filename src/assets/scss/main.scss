@@ -466,7 +466,7 @@ code[class*="language-"]::mozselection {
 
 pre[class*="language-"] {
   padding: 1em;
-  margin: .5em 0;
+  margin: 1em 0;
   overflow: auto;
   @apply bg-gray-200;
   @apply rounded-lg;
@@ -640,4 +640,28 @@ figure {
   figcaption {
     @apply text-center;
   }
+}
+
+.codeblock-title {
+  @apply block;
+  @apply relative;
+  @apply bg-gray-200;
+  @apply w-full;
+  top: 1.2rem;
+  @apply rounded-tr-lg;
+  @apply rounded-tl-lg;
+}
+
+
+.codeblock-title span {
+  @apply relative;
+  @apply inline;
+  font-size: 0.875rem !important;
+  @apply font-mono;
+  @apply text-gray-800;
+  @apply bg-gray-400;
+  @apply rounded-br-lg;
+  @apply rounded-tl-lg;
+  @apply px-2;
+  @apply py-1;
 }

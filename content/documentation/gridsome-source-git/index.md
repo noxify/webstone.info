@@ -16,8 +16,7 @@ npm install -s @noxify/gridsome-source-git
 
 ## Usage
 
-```js
-//gridsome.config.js
+```js:title=gridsome.config.js
 module.exports = {
   plugins: [
     {
