@@ -1,6 +1,9 @@
 ---
-title: Example for @gridsome/source-filesystem
+title: Example Filesystem
 ---
+
+> This example uses [@gridsome/source-filesystem](https://gridsome.org/plugins/@gridsome/source-filesystem)
+
 
 ## Markdown Files
 

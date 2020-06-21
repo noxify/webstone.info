@@ -1,8 +1,10 @@
 ---
-title: Example for @gridsome/source-contentful
+title: Example Contentful 
 ---
 
 ## Configuration
+
+> This example uses [@gridsome/source-contentful](https://gridsome.org/plugins/@gridsome/source-contentful)
 
 ```js
 module.exports = {

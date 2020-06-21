@@ -1,6 +1,7 @@
 ---
-title: Example for gridsome-source-sanity
+title: Example Sanity
 ---
+> This example uses [gridsome-source-sanity](https://gridsome.org/plugins/gridsome-source-sanity)
 
 ## Configuration
 

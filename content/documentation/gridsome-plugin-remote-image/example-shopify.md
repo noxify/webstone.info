@@ -1,6 +1,8 @@
 ---
-title: Example for gridsome-source-shopify
+title: Example Shopify
 ---
+
+> This example uses [gridsome-source-shopify](https://gridsome.org/plugins/gridsome-source-shopify)
 
 ## Configuration
 
