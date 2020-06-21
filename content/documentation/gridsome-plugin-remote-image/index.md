@@ -115,7 +115,21 @@ key1:
 
 ## Limitations
 
-Currently the plugin doesn't support array of objects.
+### Target field name
+
+Currently, it's not possible to define a nested field for the `targetField` definition.
+
+### Fetch data from a reference
+
+Currently you have to define the collection where the images are stored.
+
+If you have a `Post` collection which has a reference to `Asset`, you can't use `Post` as `typeName` and `image.url` as `sourceField`.
+
+You have to use `Asset` as `typeName` and `url` as `sourceField`.
+
+### Not supported field type
+
+Currently the plugin doesn't support `array of objects`.
 
 ```
 ---
@@ -127,3 +141,4 @@ key1:
   image: https://example.com/image2.jpg
 ---
 ```
+
