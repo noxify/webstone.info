@@ -2,9 +2,9 @@
 title: Example Contentful 
 ---
 
-## Configuration
-
 > This example uses [@gridsome/source-contentful](https://gridsome.org/plugins/@gridsome/source-contentful)
+
+## Configuration
 
 ```js
 module.exports = {
