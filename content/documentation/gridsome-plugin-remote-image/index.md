@@ -77,3 +77,53 @@ module.exports = {
   //...
 }
 ```
+
+## Supported field types
+
+### string
+
+```
+---
+title: Post title
+remoteImage: https://example.com/image.jpg
+---
+```
+
+### Array
+
+```
+---
+title: Post title
+remoteImages: 
+  - https://example.com/image1.jpg
+  - https://example.com/image2.jog
+---
+```
+
+### Object
+
+```
+---
+title: Post title
+key1: 
+  key2: https://example.com/image1.jpg
+  key3: 
+    - https://example.com/image1.jpg
+    - https://example.com/image2.jog
+---
+```
+
+## Limitations
+
+Currently the plugin doesn't support array of objects.
+
+```
+---
+title: Post title
+key1:
+- index: 1
+  image: https://example.com/image1.jpg
+- index: 2
+  image: https://example.com/image2.jpg
+---
+```

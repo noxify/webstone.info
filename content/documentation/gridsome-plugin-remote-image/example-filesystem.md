@@ -1,5 +1,5 @@
 ---
-title: Example
+title: Example for @gridsome/source-filesystem
 ---
 
 ## Markdown Files
@@ -30,11 +30,46 @@ remoteImages:
 Image Credits: https://unsplash.com/
 ```
 
+## Configuration
+
+```js
+module.exports = {
+  siteName: 'Gridsome',
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'FsMarkdownEntry',
+        path: './content/md/**/*.md',
+      }
+    },
+    {
+      use: '@noxify/gridsome-plugin-remote-image',
+      options: {
+        'original' : true,
+        'typeName': 'FsMarkdownEntry',
+        'sourceField': 'remoteImage',
+        'targetField': 'imageDownloaded',
+        'targetPath': 'src/assets/fs/remoteImage'
+      }
+    }, {
+      use: '@noxify/gridsome-plugin-remote-image',
+      options: {
+        'cache' : false,
+        'typeName': 'FsMarkdownEntry',
+        'sourceField': 'remoteImages',
+        'targetField': 'imagesDownloaded'
+      }
+    }
+  ]
+}
+```
+
 ## GraphQL Query
 
 ```graphql
 {
-  allEntry {
+  allFsMarkdownEntry {
     edges {
       node {
         title
@@ -54,7 +89,7 @@ Image Credits: https://unsplash.com/
 ```json
 {
   "data": {
-    "allEntry": {
+    "allFsMarkdownEntry": {
       "edges": [
         {
           "node": {
