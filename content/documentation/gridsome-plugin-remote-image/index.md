@@ -11,7 +11,7 @@ The plugin should work with any data source, but I have tested it only with `sou
 
 ## Installation
 
-```sh
+```shell
 npm install -s https://github.com/noxify/gridsome-plugin-remote-image.git
 
 # or

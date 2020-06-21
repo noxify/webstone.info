@@ -8,7 +8,7 @@ Simple plugin for `@gridsome/transformer-remark` to enable the download of remot
 
 ## Installation
 
-```
+```shell
 npm install -s https://github.com/noxify/gridsome-plugin-remark-image-download.git
 ```
 

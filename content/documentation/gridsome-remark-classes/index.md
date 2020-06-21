@@ -8,7 +8,7 @@ Gridsome Remark plugin to embed external stuff into your gridsome site.
 
 ## Installation
 
-```
+```shell
 npm install -s @noxify/gridsome-remark-classes
 ```
 

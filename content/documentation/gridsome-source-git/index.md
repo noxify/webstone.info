@@ -10,7 +10,7 @@ This is a port from Gatsby: [stevetweeddale/gatsby-source-git](https://github.co
 
 ## Installation
 
-```sh
+```shell
 npm install -s @noxify/gridsome-source-git
 ```
 

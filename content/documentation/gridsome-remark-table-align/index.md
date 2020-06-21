@@ -4,6 +4,6 @@ title: Introduction
 
 ## Installation
 
-```sh
+```shell
 npm install -s @noxify/gridsome-remark-table-align
 ```
