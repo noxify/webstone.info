@@ -5,6 +5,8 @@ title: Example Sanity
 
 ## Configuration
 
+It is recommended to set `schemaType` to 'Image' if your Sanity studio does not contain any images in order to ensure that the targetField gets the type `Image` rather than `Images`.
+
 ```js:title=gridsome.config.js
 module.exports = {
   siteName: 'Gridsome',
@@ -24,7 +26,8 @@ module.exports = {
         'typeName': 'SanityImageAsset',
         'sourceField': 'url',
         'targetField': 'localFile',
-        'targetPath': 'src/assets/sanity/remoteImage'
+        'targetPath': 'src/assets/sanity/remoteImage',
+        'schemaType': 'Image'
       }
     }
   ]

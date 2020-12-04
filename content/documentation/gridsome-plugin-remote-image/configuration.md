@@ -14,5 +14,6 @@ title: Configuration
 | original                 | `Boolean` | No       | `false`                   | Defines whether to use the original image path as the file path.<br>Setting this to true will save images in a folder structure the same as the image URL - `https://example.com/some/image/path.jpg` will be saved as `/<target path>/some/image/path.jpg`. |
 | forceHttps               | `Boolean` | No       | `true`                    | Defines whether to replace "http" scheme in the remote image url with "https".<br>Setting this to false will download images without a secure connection (except if the url scheme is already https). |
 | downloadFromLocalNetwork | `Boolean` | No       | `false`                   | Defines whether images with a local remote image url (e.g. private ip address or localhost) are ignored.<br>Setting this to true will download images from the local network. |
+| schemaType               | `String`  | No       | `null`                    | Defines the targetField as type Image when value is set to 'Image'.<br>This is ignored if the source field is not a string. |
 
 > It's currently not possible to use `~` or `@`.
