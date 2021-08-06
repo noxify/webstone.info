@@ -125,6 +125,16 @@ If you have a `Post` collection which has a reference to `Asset`, you can't use 
 
 You have to use `Asset` as `typeName` and `url` as `sourceField`.
 
+### GraphQL Data Source
+
+In case you're using graphql as data source, you're not able to use this plugin.
+
+Since the graphql source plugin(s) doesn't copy the data into the local schema, the plugin has no access to this data.
+
+Related issues are: 
+* https://github.com/noxify/gridsome-plugin-remote-image/issues/28
+* https://github.com/noxify/gridsome-plugin-remote-image/issues/22
+
 ### Not supported field type
 
 Currently the plugin doesn't support `array of objects`.
