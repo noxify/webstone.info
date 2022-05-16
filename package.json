@@ -18,7 +18,7 @@
     "gridsome-source-menu": "^0.1.1",
     "gridsome-source-static-meta": "github:noxify/gridsome-source-static-meta#master",
     "hooper": "^0.3.4",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "medium-zoom": "^1.0.5",
     "minimist": "^1.2.5",
     "node-sass": "^4.14.1",
