@@ -20,7 +20,7 @@
     "hooper": "^0.3.4",
     "lodash": "^4.17.15",
     "medium-zoom": "^1.0.5",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "node-sass": "^4.14.1",
     "pluralize": "^8.0.0",
     "prism-themes": "^1.4.0",
