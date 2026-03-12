@@ -1,0 +1,10 @@
+{
+  "builds": [
+    {
+    
+      "config": {
+        "distDir": "out"
+      }
+    }
+  ]
+}
