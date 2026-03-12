@@ -1,10 +1,2 @@
 {
-  "builds": [
-    {
-      "src": "*", "use": "@vercel/static",
-      "config": {
-        "distDir": "out"
-      }
-    }
-  ]
 }
