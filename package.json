@@ -1,0 +1,8 @@
+{
+    "name": "webstone.info",
+    "version": "1.0.0",
+    "scripts": {
+        "clean": "rm -rf ./out",
+        "build": "npm run clean && mkdir -p ./out && cp ./index.html ./out/index.html && cp -R ./assets ./out/assets"
+    }
+}
