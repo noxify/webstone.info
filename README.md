@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="./assets/ws-logo.png" alt="webstone Logo" width="72" style="vertical-align: middle;" />
+	<img src="./public/ws-logo.png" alt="webstone Logo" width="72" style="vertical-align: middle;" />
 	&nbsp;&nbsp;
 	<span style="display: inline-block; margin: 0; vertical-align: middle; line-height: 1; font-size:36px;">webstone</span>
 </div>
